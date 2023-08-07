@@ -37,15 +37,15 @@
         </div>
         <div class="justify-items-center items-center flex px-7 navbar">
             <div class="dropdown">
-                <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                    <div class="d-sm-none d-lg-inline-block"></div>TH
+                <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user text-gray-500">
+                    <div class="d-sm-none d-lg-inline-block"></div>TH <i class="fa-solid fa-caret-down"></i>
                 </a>
-                <div class="dropdown-menu dropdown-menu-right">
+                {{-- <div class="dropdown-menu dropdown-menu-right">
                     <ul class="px-4">
                         <li><label>TH</label></li>
                         <li><label>EN</label></li>
                     </ul>
-                </div>
+                </div> --}}
 
             </div>
         </div>
