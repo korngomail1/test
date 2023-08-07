@@ -25,8 +25,8 @@ Route::get('/login', function () {
     return view('auth.login');
 })->name('login');
 
-Route::resource('home', App\Http\Controllers\HomeController::class);
+Route::get('home', [App\Http\Controllers\HomeController::class,'index'])->name('home');
 Route::post('register', [App\Http\Controllers\Auth\RegisteredUserController::class, 'store'])->name('register');
 Route::post('postlogin', [App\Http\Controllers\Auth\AuthController::class, 'postlogin'])->name('postlogin');
-Route::get('logout', [App\Http\Controllers\AuthController::class, 'logout'])->name('logout');
+Route::get('logout', [App\Http\Controllers\Auth\AuthController::class, 'logout'])->name('logout');
 

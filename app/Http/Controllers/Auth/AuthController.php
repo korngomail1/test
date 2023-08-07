@@ -17,14 +17,22 @@ class AuthController extends Controller
     public function postlogin(Request $request)
     {
         $user = User::where('email', $request->Email)->first();
-        if ($user && $user->Password === '1234') {
+        if ($user) {
             // Password is correct, perform the login
-            Auth::login($user);
+            Auth::login($user); 
             // Redirect to the authenticated user's dashboard or any other page
-            return redirect()->intended('/');
+            return redirect()->route('home');
         } else {
             // Password is incorrect, show an error message
             return redirect()->route('login')->with('error', 'Invalid credentials. Please try again.');
         }
+    }
+
+    public function logout(Request $request)
+    {
+
+        Auth::logout();
+
+        return back();
     }
 }
