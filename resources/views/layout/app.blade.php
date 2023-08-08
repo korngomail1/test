@@ -11,12 +11,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
         crossorigin="anonymous"></script>
-    {{-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  --}}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     @vite(['resources/css/app.css','resources/js/main.js'])
     {!! Html::style('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;700&display=swap') !!}
     {!! Html::style('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap') !!}
@@ -30,9 +26,9 @@
         position: absolute;
         right: 0;
         top: 0;
-        width: 25%;
+        width: 20%;
         height: 100%;
-        background-color: #1a202c;
+        background-color: #ffffff;
         color: white;
         padding: 1rem;
         box-shadow: -4px 0 6px -2px rgba(0, 0, 0, 0.2);

@@ -59,37 +59,22 @@
                 <div class="side-inner">
 
                     <div class="profile">
-                        <img src="images/person_profile.jpg" alt="Image" class="img-fluid">
-                        <h3 class="name">Debby Williams</h3>
-                        <span class="country">New York, USA</span>
+                        <h3 class="name">{{Auth::user()->Fname}} {{Auth::user()->Lname}}</h3>
                     </div>
 
-                    <div class="counter d-flex justify-content-center">
-                        <!-- <div class="row justify-content-center"> -->
-                        <div class="col">
-                            <strong class="number">892</strong>
-                            <span class="number-label">Posts</span>
-                        </div>
-                        <div class="col">
-                            <strong class="number">22.5k</strong>
-                            <span class="number-label">Followers</span>
-                        </div>
-                        <div class="col">
-                            <strong class="number">150</strong>
-                            <span class="number-label">Following</span>
-                        </div>
-                        <!-- </div> -->
-                    </div>
-
-                    <div class="nav-menu">
+                    <div class="nav-menu  border-b border-gray-100">
                         <ul>
-                            <li class="active"><a href="#"><span class="icon-home mr-3"></span>Feed</a></li>
-                            <li><a href="#"><span class="icon-search2 mr-3"></span>Explore</a></li>
-                            <li><a href="#"><span class="icon-notifications mr-3"></span>Notifications</a></li>
-                            <li><a href="#"><span class="icon-location-arrow mr-3"></span>Direct</a></li>
-                            <li><a href="#"><span class="icon-pie-chart mr-3"></span>Stats</a></li>
-                            <li><a href="#"><span class="icon-sign-out mr-3"></span>Sign out</a></li>
+                            <li><a href="{{route('product_category')}}"><i class="fa-regular fa-file mr-3"></i>จัดการหมวดหมู่สินค้า</a></li>
+                            <li><a href="{{route('setting_category')}}"><i class="fa-solid fa-gear mr-3"></i></i>ตั้งค่าหมวดหมู่สินค้า</a></li>
                         </ul>
+                    </div>
+
+                    <div class="foot" style="height: 100%;position: absolute; ">
+                        <div>
+                            <ul>
+                            <li><a href="{{ route('logout') }}"><i class="fa-solid fa-power-off mr-3 mt-1"></i>ออกจากระบบ</a></li>
+                        </ul>
+                        </div>
                     </div>
                 </div>
 
