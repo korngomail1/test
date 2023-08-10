@@ -26,7 +26,7 @@
         position: absolute;
         right: 0;
         top: 0;
-        width: 20%;
+        width: 30%;
         height: 100%;
         background-color: #ffffff;
         color: white;
